@@ -502,7 +502,6 @@ export default {
             let count = 0;
             foodListItem.foods.map(innerItem => { // 遍历每个menu对应的食物组
               this.foods.forEach(food => { // 遍历当前商家中选中的所有食物
-                console.log('foods----------', food);
                 if (food._id === innerItem._id) {// 如果当前这道菜被选中过
                   innerItem.count = food.count; // 更新当前这道菜的count
                   count += food.count; // 将食物数量累加到当前menu的count上
